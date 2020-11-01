@@ -80,6 +80,8 @@ section '.code' code readable executable
 
                 cinvoke printf, otherSymb
 
+                invoke  VirtualFree, [A], [N], MEM_DECOMMIT
+
                 call [getch]
 
                 push NULL
